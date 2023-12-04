@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tech.com</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- ***OwnStyle*** -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ***Navbar*** -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid py-2 px-5">
+        <a class="navbar-brand" href="#">Tech.com</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav gap-3">
+            <a class="nav-link text-dark" aria-current="page" href="index.html"
+              >Home</a
+            >
+            <a class="nav-link text-dark" href="#products">Products</a>
+            <a class="nav-link text-dark" href="#contact">Contact</a>
+          </div>
+          <div class="d-flex mt-4 gap-2 d-lg-none">
+            <button
+              class="btn rounded-pill w-100 border-1 border-black bg-transparent fw-semibold"
+            >
+              Log in
+            </button>
+            <button class="btn w-100 btn-dark rounded-pill">Sign Up</button>
+          </div>
+        </div>
+        <form
+          class="me-3 d-flex justify-content-end w-auto d-none d-lg-inline-flex"
+          role="search"
+        >
+          <input
+            class="form-control py-2 px-3 rounded-pill border-0"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <div class="d-none d-lg-inline">
+          <button class="border-0 bg-transparent fw-semibold">Log in</button>
+          <button type="button" class="btn btn-dark rounded-pill">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ***ProductArticle*** -->
+      <section class="py-5 bg-body-secondary product">
+        <div class="container px-4 px-lg-5 my-5">
+          <div class="row gx-4 gx-lg-5 align-item-center">
+            <div class="col-md-6">
+              <img
+                src="assets/images/detailproduct/ideapad-slim5.jpg"
+                alt=""
+                class="card-img-top mb-5 mb-md-0 w-75 rounded-4"
+                alt="..."
+              />
+              <img
+                src="assets/images/Product1.jpg"
+                alt=""
+                class="card-img-top mb-5 mt-3 mb-md-0 w-75 rounded-4"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="small mb-1">Laptop Product</div>
+              <h1 class="display-5 fw-bolder">LENOVO IdeaPad Slim 5</h1>
+              <div class="fs-5 mb-5">
+                <span class="text-decoration-line-through">Rp11.799.000</span>
+                <span>Rp11.349.000</span>
+              </div>
+
+              <!-- Deskripsi Detail Disini -->
+              <div class="lead mb-5 fs-6">
+                <p>LENOVO IdeaPad Slim 5 14IRL8</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Neque porro dolores architecto soluta debitis, sequi saepe
+                  repellat. Sequi magni ex quia odit velit iusto eum, illum non
+                  blanditiis perferendis ullam.
+                </p>
+                <ul>
+                  <li>
+                    Processor : Intel Core i5-13500H, 12C (4P + 8E) / 16T,
+                    P-core 2.6 / 4.7GHz, E-core 1.9 / 3.5GHz, 18MB
+                  </li>
+                  <li>Graphics : Integrated Intel Iris Xe Graphics</li>
+                  <li>Chipset : Intel SoC Platform</li>
+                  <li>Memory : 16GB Soldered LPDDR5-5200</li>
+                  <li>Storage : 512GB SSD M.2 2242 PCIe 4.0x4 NVMe</li>
+                  <li>
+                    Display : 14" WUXGA (1920x1200) OLED 400nits Glossy, 100%
+                    DCI-P3, TÜV Low Blue Light, DisplayHDR™ True Black 500
+                  </li>
+                </ul>
+                <p>Garansi Resmi Lenovo Indonesia 2 Tahun + ADP</p>
+              </div>
+              <div class="d-flex">
+                <input
+                  type="num"
+                  class="form-control text-center me-3"
+                  value="1"
+                  style="max-width: 3rem"
+                />
+                <button class="btn btn-dark flex-shrink-0" type="button">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***ContactArticle*** -->
+      <article id="contact" class="contact-article px-5 py-5 bg-light">
+        <form class="mx-auto text-center py-5" action="">
+          <h1 class="text-center mb-5">
+            Get in touch with us for more information
+          </h1>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control border-black"
+              id="floatingInput"
+              placeholder="Name"
+            />
+            <label for="floatingInput">Name*</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control border-black"
+              id="floatingInput"
+              placeholder="Subject"
+            />
+            <label for="floatingInput">Subject*</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control border-black"
+              id="floatingInput"
+              placeholder="Email"
+            />
+            <label for="floatingInput">Email*</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea
+              class="form-control border-black"
+              placeholder="Leave a comment here"
+              id="Message"
+              style="height: 100px"
+            ></textarea>
+            <label for="Message">Message*</label>
+          </div>
+          <button type="submit" class="btn btn-dark mt-2">Submit Now</button>
+        </form>
+      </article>
+    </main>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
